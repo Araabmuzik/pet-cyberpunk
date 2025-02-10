@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "Archangelsk";
+  src: url("../font/Archangelsk.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Archangelsk";
+}
+
+:root {
+  --color-yellow: #f8f200;
+  --color-black: #000;
+  --color-white: #fff;
+  --line-height: 6.33rem;
+  --link-color: #52bedc;
+  --text-color: #777;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.container {
+  width: 128rem;
+  margin: 0 auto;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Хедер */
+
+header {
+  background-image: url(../image/headerbg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.heading-links svg {
+  margin-right: 4rem;
+}
+
+.heading-links svg:hover {
+  cursor: pointer;
+}
+
+.heading-links svg:last-child {
+  margin-right: 0;
+}
+
+.crocked-frame {
+  background-color: #f8f200;
+  padding: 7rem;
+  clip-path: polygon(
+    12% 0,
+    100% 0,
+    100% 20%,
+    100% 78%,
+    88% 100%,
+    20% 100%,
+    0 100%,
+    0 22%
+  );
+  display: inline-block;
+}
+
+.crocked-frame h1 {
+  font-size: 6.2rem;
+  font-weight: 400;
+  line-height: var(--line-height);
+  max-width: 48.4rem;
+}
+
+.button {
+  color: var(--color-yellow);
+  background-color: var(--color-black);
+  border: none;
+  padding: 1.9rem 5rem;
+  font-size: 2.4rem;
+  margin-top: 2.5rem;
+  transition: background-color color border 0.3s ease-in-out 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  outline: 0.2rem solid var(--color-black);
+}
+
+.header-banner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Блок с описанием */
+
+.description {
+  padding-top: 7rem;
+}
+
+.description-title h1 {
+  font-size: 6.4rem;
+  font-weight: 300;
+}
+
+.title-group h1 {
+  margin-left: 3.2rem;
+}
+
+.description-title p {
+  font-size: 1.8rem;
+  max-width: 95.2rem;
+  color: var(--text-color);
+  margin-top: 2.5rem;
+}
+
+.description-title p a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.image-group {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3.2rem;
+  grid-row-gap: 3.2rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  height: 42.4rem;
+}
+
+.crocked-frame.img {
+  margin-top: 0;
+  padding: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.crocked-frame.img.first {
+  background-image: url(../image/crocked1.jpg);
+}
+
+.crocked-frame.img.large {
+  background-image: url(../image/crocked2.jpg);
+  grid-row: span 2;
+  height: 100%;
+  width: 100%;
+}
+
+.crocked-frame.img.second {
+  background-image: url(../image/crocked3.jpg);
+}
+
+/* ______Блок с обратной связью___ */
+
+.callback {
+  background-color: var(--color-black);
+  position: relative;
+  padding-bottom: 12rem;
+  padding-top: 7rem;
+}
+
+.callback::before {
+  content: "";
+  position: absolute;
+  background-image: url(../image/22\ 1.png);
+  background-repeat: repeat-x;
+  height: 7rem;
+  width: 100%;
+  top: -2rem;
+}
+
+.callback::after {
+  content: "";
+  position: absolute;
+  background-image: url(../image/22\ 2.png);
+  background-repeat: repeat-x;
+  height: 7rem;
+  width: 100%;
+  bottom: 0rem;
+}
+
+.description-title.white h1 {
+  font-size: 6.4rem;
+  color: var(--color-white);
+}
+
+.description-title.white p {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  margin-top: 3.9rem;
+}
+
+.callback-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 9.8rem;
+  position: relative;
+}
+
+.callback-form img {
+  width: 50%;
+}
+
+.form-input {
+  margin-top: 3.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 0.1rem solid var(--text-color);
+  min-width: 46rem;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  padding-bottom: 1.3rem;
+}
+
+.callback-form input:first-child {
+  margin-top: 0;
+}
+
+.button.yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.button.yellow:hover {
+  background-color: var(--color-black);
+  color: var(--color-yellow);
+  outline: 0.2rem solid var(--color-yellow);
+}
+
+.input-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  width: 100%;
+  max-width: 46rem;
+  height: 12rem;
+  border: 0.1rem dashed var(--text-color);
+}
+
+.input-file a {
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+
+.input-file span {
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.text-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.text-checkbox input {
+  min-width: none;
+}
+
+label {
+  color: #777;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+/* __Реклама HP___ */
+
+.hp {
+  background-color: var(--color-yellow);
+  position: relative;
+  padding-bottom: 7rem;
+  padding-top: 7rem;
+}
+
+.hp-description {
+  display: flex;
+}
+
+.hp-images img:first-child {
+  margin-bottom: 2.6rem;
+}
+
+.description-title ul {
+  padding: 0;
+  list-style: none;
+}
+
+.description-title li {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.description-title.color-black li {
+  color: var(--color-black);
+}
+
+.description-title li svg {
+  margin-right: 1rem;
+}
+
+.description-title.color-black p {
+  color: var(--color-black);
+}
+
+/* __Покупка__ */
+
+.buy {
+  background-image: url(../image/promodisc.jpg);
+  background-repeat: no-repeat;
+  background-size: 56% 100%;
+  background-color: var(--color-black);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.buy-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.description-title.white span {
+  color: var(--link-color);
+  font-size: 2.4rem;
+  margin-top: 2.5rem;
+  display: block;
+}
+
+.take-platform-height {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 15rem;
+}
+
+.description-title.white li {
+  color: var(--color-white);
+  display: block;
+}
+
+/* __Футер__ */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+
+.footer-logos img:first-child {
+  margin-right: 3.2rem;
+}
+
+.footer-text {
+  list-style: none;
+  display: flex;
+  font-size: 1.8rem;
+}
+
+.footer-text li:first-child {
+  margin-right: 3.2rem;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.coopyright {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1.3rem 0;
+}

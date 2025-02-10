@@ -1,0 +1,160 @@
+@media (max-width: 1281px) {
+  .container {
+    max-width: 102.4rem;
+  }
+
+  .callback-form img {
+    width: 50%;
+  }
+
+  .buy {
+    background-size: 45% 100%;
+  }
+
+  .hp-description {
+    align-items: center;
+  }
+
+  .hp-images img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1081px) {
+  .container {
+    max-width: 99.1rem;
+  }
+
+  .buy {
+    background-image: none;
+  }
+
+  .buy-flex {
+    justify-content: center;
+  }
+
+  .hp-images img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 76.8rem;
+  }
+
+  header {
+    height: 80vh;
+  }
+
+  .crocked-frame {
+    padding: 3rem 5rem;
+  }
+
+  .crocked-frame h1 {
+    font-size: 3.9rem;
+    font-weight: bold;
+    max-width: 34.4rem;
+    line-height: normal;
+  }
+
+  .button {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .description-title h1 {
+    font-size: 5.8rem;
+  }
+
+  .crocked-frame.img {
+    padding: 7rem;
+  }
+
+  .callback-group {
+    flex-direction: column-reverse;
+  }
+
+  .description-title.white h1 {
+    font-size: 5.8rem;
+  }
+
+  .buy {
+    background-image: none;
+  }
+
+  .buy-flex {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    max-width: 54rem;
+    padding-left: 0.5rem;
+  }
+
+  .heading-links svg {
+    margin: 0.2rem;
+  }
+
+  .image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60rem;
+    row-gap: 2rem;
+  }
+
+  .crocked-frame.img {
+    max-width: 48rem;
+  }
+
+  .hp-description {
+    flex-direction: column;
+  }
+
+  .description-title.color-black {
+    margin-top: 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    padding: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 541px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .heading {
+    flex-direction: column;
+  }
+
+  .heading-links {
+    margin-top: 2rem;
+  }
+
+  .title-group h1 {
+    margin: 0;
+  }
+
+  .callback-group {
+    margin-top: 2rem;
+  }
+
+  .form-input {
+    min-width: 100%;
+  }
+
+  .footer-logos img:first-child {
+    margin: 0;
+  }
+}
